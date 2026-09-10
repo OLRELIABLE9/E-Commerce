@@ -11,6 +11,13 @@ nav {
   display: flex;
 }
 
+img {
+  width: 100%;
+  height: 100%;
+  max-height: 50vh;
+  padding: 20px;
+}
+
 .nav__container {
 width: 100%;
 max-width: 1200px;
@@ -19,7 +26,13 @@ justify-content: space-between;
 margin: 0 auto;
 align-items: center;
 padding: 0 24px;
+background-color: white;
 }
+
+.blue {
+  color: blue;
+}
+
 
 .logo {
   width: 160px;
@@ -42,7 +55,73 @@ li {
   padding: 8px;
 }
 
+.nav__link:hover {
+  text-decoration: underline;
+}
+
 .nav__link--primary {
   border: 2px solid blue;
   border-radius: 4px;
+}
+
+.nav__link--primary:hover {
+  text-decoration: none;
+}
+
+#landing {
+  background-color: aliceblue;
+}
+
+header {
+  height: calc(100vh - 80px);
+}
+
+.header__container {
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around
+}
+
+.header__description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 56px;
+  color: blue;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 32px;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:active {
+  transform: translateY(1px);
+}
+
+.btn {
+  background-color: blue;
+  color: white;
+  padding: 12px 24px;
+  font-size: 20px;
+  border-radius: 4px;
+  border: none;
+}
+
+.header__image--wrapper {
+  padding: 20px;
 }
